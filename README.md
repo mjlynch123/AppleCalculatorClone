@@ -1,6 +1,6 @@
-# AppleCalculatorClone
+## AppleCalculatorClone
 
-#Description
+## Description
 This is an app that I built using ElectronJS and was inspired by the calculator created by Apple.
 
 #Usage Instruction
