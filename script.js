@@ -59,6 +59,9 @@ function handleClick(event) {
     currentValue = "";
     previousValue = "";
     operator = "";
+    if (!Number.isInteger(result)) {
+      result = result.toFixed(3);
+    }
     return result;
   }
 

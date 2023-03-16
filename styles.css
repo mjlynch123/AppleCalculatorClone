@@ -26,13 +26,18 @@ body {
     color: white;
 }
 
+#ac:hover {
+    cursor: pointer;
+    background-color: hsla(240, 3%, 80%, .8);
+}
+
 .number {
     background-color: hsl(240, 3%, 80%);
     color: white;
 }
 
 .number:hover {
-    background-color: hsla(267, 17%, 43%, .8);
+    background-color: hsla(240, 3%, 80%, .8);
     cursor: pointer;
 }
 
