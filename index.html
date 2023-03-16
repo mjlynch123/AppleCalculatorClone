@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <script
+      src="https://kit.fontawesome.com/5e86550e56.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section id="calc-window"><span id="numberSpot">0</span></section>
+    <section id="buttons">
+      <table>
+        <tbody>
+          <tr>
+            <td class="top-row" id="ac" data-value="AC">AC</td>
+            <td class="top-row" id="plus-minus" data-value="plus-minus">&#xb1;</td>
+            <td class="top-row" id="modulus" data-value="%">&#x25;</td>
+            <td class="operator" id="divide" data-operator="/">&#xf7;</td>
+          </tr>
+          <tr>
+            <td class="number" class="btn" data-value="7">7</td>
+            <td class="number" class="btn" data-value="8">8</td>
+            <td class="number" class="btn" data-value="9">9</td>
+            <td class="operator" class="btn" data-operator="*">&#xd7;</td>
+          </tr>
+          <tr>
+            <td class="number" class="btn" data-value="4">4</td>
+            <td class="number" class="btn" data-value="5">5</td>
+            <td class="number" class="btn" data-value="6">6</td>
+            <td class="operator" id="btn" data-operator="-">&#x2212;</td>
+          </tr>
+          <tr>
+            <td class="number" class="btn" data-value="1">1</td>
+            <td class="number" class="btn" data-value="2">2</td>
+            <td class="number" class="btn" data-value="3">3</td>
+            <td class="operator" data-operator="+">+</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="number" id="zero" data-value="0">0</td>
+            <td class="number" id="decimal" data-value=".">.</td>
+            <td class="equal" data-operator="=">=</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
